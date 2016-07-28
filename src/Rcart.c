@@ -114,7 +114,7 @@ R_predict(SEXP obj, SEXP r_x, SEXP r_y, SEXP r_ans, SEXP r_dims)
 	dx = x[i] - ix - 1.;
 	dy = y[i] - iy - 1.;
 
-	if(ix < 0 || ix >= dims[0] || iy < 0 || iy >= dims[1]) {
+	if(ix < 0 || ix >= dims[1] || iy < 0 || iy >= dims[0]) {
 	    continue;
 	}
 
